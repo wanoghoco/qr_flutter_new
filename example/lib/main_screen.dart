@@ -5,7 +5,7 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qr_flutter_new/qr_flutter.dart';
 
 /// This is the screen that you'll see when the app starts
 class MainScreen extends StatefulWidget {
@@ -16,7 +16,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
-    const String message =
+    const message =
         // ignore: lines_longer_than_80_chars
         'Hey this is a QR code. Change this value in the main_screen.dart file.';
 
@@ -101,7 +101,8 @@ class _MainScreenState extends State<MainScreen> {
                         borderRadius: 5,
                         roundedOutsideCorners: true,
                       ),
-                      embeddedImage: AssetImage('assets/images/4.0x/logo_yakka_transparent.png'),
+                      embeddedImage: AssetImage(
+                          'assets/images/4.0x/logo_yakka_transparent.png'),
                       embeddedImageStyle: QrEmbeddedImageStyle(
                         size: Size.square(40),
                         color: Colors.white,
